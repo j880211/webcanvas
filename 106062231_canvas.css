@@ -1,0 +1,307 @@
+canvas{
+    border: 3px dotted rgb(105, 105, 105);
+    background-color:#ffffff;
+    position:absolute;
+    top: 80px;
+    left: 100px;
+}
+body {
+    background-image: url("background.jpg");
+    background-repeat:repeat;
+    background-size: auto;
+    cursor:grab;
+}
+.container {
+    position: relative;
+}
+#buttons {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+#reset {
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+
+.eraser{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("eraser.png");
+}
+.brush{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: url("brush.png");
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("brush.png");
+}
+.circle{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("circle.png");
+}
+.triangle{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("triangle.png");
+}
+.square{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("square.png");
+}
+.undo{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("undo.png");
+}
+.redo{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("redo.png");
+}
+.download{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("download.png");
+}
+.upload{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("upload.png");
+}
+.clear{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("clear.png");
+}
+
+.text{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("text.png");
+}
+
+.brushsquare{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("squarebrush.png");
+}
+
+.butt{
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 19px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  background-image:url("butt.png");
+}
+
+.rightbar{
+  margin-top: 50px;
+  margin-left: 770px;
+  float: left;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorbar
+{
+  margin-top: 50px;
+  margin-left: 10px;
+  float: left;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.color{
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+  width: 25px;
+  height:25px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+}
+
+.topbar{
+  margin-top: 10px;
+  margin-left: 50px;
+  float: left;
+  width: 200px;
+  height:30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.downbar{
+  margin-top: 20px;
+  margin-left:0px;
+  float: left;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.leftbar{
+  margin-top: 0px;
+  margin-left: 0px;
+  float: left;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.middlebar{
+  margin-top: 0px;
+  margin-left: 0px;
+  float: left;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rightdownbar{
+  margin-top: 0px;
+  margin-left: 0px;
+  float: left;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.downdownbar{
+  margin-top: 20px;
+  margin-left: 0px;
+  float: left;
+  width: 200px;
+  height:30px;
+  display: flex;
+  flex-direction: row;
+}
+
+#red {
+  background-color: red;
+}
+#lightpink {
+  background-color: lightpink;
+}
+#sandybrown {
+  background-color:sandybrown;
+}
+#yellow {
+  background-color:yellow;
+}
+#lime {
+  background-color: lime ;
+}
+#mediumseagreen {
+  background-color:mediumseagreen;
+}
+#lightskyblue{
+  background-color:lightskyblue;
+}
+#dodgerblue{
+  background-color: dodgerblue;
+}
+#white {
+ background-color: white;
+}
+#black{
+  background-color: black;
+}
+#purple{
+  background-color:purple;
+}
+#orange{
+  background-color:orange;
+}
+#gray{
+  background-color:gray;
+}
+#blue{
+  background-color:blue;
+}

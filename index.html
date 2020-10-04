@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>my_canvas</title>
+  <!-- CSS and javascript -->
+  <link rel="stylesheet" type="text/css" href="106062231_canvas.css">
+ </head>
+ <body onload="init()">
+    <div class="container" >
+        <div id="outer">
+                <canvas width="600px" height="400px" id="art"></canvas>
+        </div>
+        <div class="rightbar" >
+            <div class="topbar">
+                <select name="brush"  style= "margin-left: -10px" onchange="fontSizes(value)">
+                    <option id="brushsize" value="1" >brush size:1</option>
+                    <option id="brushsize" value="5" >brush size:5</option>
+                    <option id="brushsize" value="10">brush size:10</option>
+                    <option id="brushsize" value="15">brush size:15</option>
+                    <option id="brushsize" value="20">brush size:20</option>
+                    <option id="brushsize" value="25">brush size:25</option>
+                </select>
+                <input type="file" id="imageLoader" name="imageLoader" onchange="handleImage(event)" style="width: 88px;margin-left: 30px"/>
+            </div>
+            <div class="downbar" >
+                <div class="leftbar">
+                    <input type="button" id="brush" class="brush" onclick="changetool(1)"/>
+                    <input type="button" id="redo" class="redo" onclick="cRedo()" />
+                    <input type="button" id="undo" class="undo" onclick="cUndo()" />
+                    <input type="button" id="textinput" class="text" onclick="changetool(6)" />
+                </div>
+                <div class="middlebar" >
+                    <input type="button" id="eraser" class="eraser" onclick="changetool(2)" />
+                    <input type="button" id="square" class="square" onclick="changetool(3)"/>
+                    <input type="button" id="reset" class="clear" style="margin-left: 19px" />
+                    <input type="button" id="brushsquare" class="brushsquare" onclick="square()" />
+                </div>
+                <div class="rightdownbar" >
+                    <input type="button" id="circle" class="circle" onclick="changetool(5)"/>
+                    <input type="button" id="triangle" class="triangle" onclick="changetool(4)" />
+                    <input type="button" id="download" class="download" onclick="download()" />
+                    <input type="button" id="butt" class="butt" onclick="round()" />
+                </div>
+            </div>
+            <div class="downdownbar">
+                <select name="fontsize" id="fontsize"   style= "margin-left: 40px" onchange="changefontsize(value)">
+                    <option  value="12" >font size:12</option>
+                    <option value="15" >font size:15</option>
+                    <option  value="20">font size:20</option>
+                    <option value="30">font size:30</option>
+                    <option  value="40">font size:40</option>
+                    <option  value="55">font size:55</option>
+                </select>
+                <select name="font type"  id="fonttype" style= "margin-left: 40px" onchange="changefonttype(value)">
+                    <option  value="serif" >serif</option>
+                    <option value="sans-serif" >sans-serif</option>
+                    <option value="monospace">monospace</option>
+                </select>
+            </div>
+        </div>
+        <div class="colorbar">
+            <div id='red' class="color" onclick="listener(0)"></div>
+            <div id='lightpink' class="color" onclick="listener(1)"></div>
+            <div id='sandybrown' class="color" onclick="listener(2)"></div>
+            <div id='orange' class="color" onclick="listener(11)"></div>
+            <div id='yellow' class="color" onclick="listener(3)"></div>
+            <div id='lime' class="color" onclick="listener(4)"></div>
+            <div id='mediumseagreen' class="color" onclick="listener(5)"></div>
+            <div id='lightskyblue' class="color" onclick="listener(6)"></div>
+            <div id='dodgerblue' class="color" onclick="listener(7)"></div>
+            <div id='blue' class="color" onclick="listener(13)"></div>
+            <div id='purple' class="color" onclick="listener(8)"></div>
+            <div id='gray' class="color"onclick="listener(12)"></div>
+            <div id='white' class="color"onclick="listener(10)"></div>
+            <div id='black' class="color"onclick="listener(9)"></div>
+        </div>
+    
+
+    </div>
+  <script src="106062231_canvas.js"></script>
+ </body>
+</html>
